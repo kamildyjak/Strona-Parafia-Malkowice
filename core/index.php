@@ -1,8 +1,8 @@
 ﻿<?php 
 	error_reporting(E_ALL & ~E_NOTICE);
-	$servername = "parafiamalko.nazwa.pl";
-	$username = "parafiamalko";
-	$password = "Dyju711kamilphp";
+	$servername = "localhost";
+	$username = "root";
+	$password = "";
 	$dbname = "parafiamalko";
 	
 	$conn = new mysqli ($servername, $username, $password, $dbname);

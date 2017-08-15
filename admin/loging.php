@@ -11,9 +11,9 @@
 $(function(){
 <?php
 
-	$servername = "parafiamalko.nazwa.pl";
-	$username = "parafiamalko";
-	$password = "Dyju711kamilphp";
+$servername = "localhost";
+	$username = "root";
+	$password = "";
 	$dbname = "parafiamalko";
 	
 	$login = $_POST['login'];

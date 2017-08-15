@@ -5,6 +5,7 @@ Projekt obejmował zakodowanie strony internetowej oraz stworzenie autorskiego s
 + dadawanie/usuwanie filmiku 
 + zarządzanie księgą gości
 + zarządzanie zakładkami menu
+
 ![](https://github.com/kamildyjak/Strona-Parafia-Malkowice/blob/master/prezentacja.png)
 ![](https://github.com/kamildyjak/Strona-Parafia-Malkowice/blob/master/prezentacja1.png)
 ![](https://github.com/kamildyjak/Strona-Parafia-Malkowice/blob/master/prezentacja2.png)

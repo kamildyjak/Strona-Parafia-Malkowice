@@ -1,0 +1,7 @@
+function edit(){$("#okno_admin.edit_all").css("visibility","visible").css("display","block");$("#admin_bg").css("visibility","visible").css("display","block");to_top();}
+function add_news(){$("#okno_admin.edit_all").css("visibility","visible").css("display","block");$("#admin_bg").css("visibility","visible").css("display","block");document.getElementById("edit_all").src ="add_news.php?parent='. $parent. '&child='. $child. '";to_top();}
+function edit_news_list(){$("#okno_admin.edit_all").css("visibility","visible").css("display","block");$("#admin_bg").css("visibility","visible").css("display","block");document.getElementById("edit_all").src ="news_list.php?parent='. $parent. '&child='. $child. '";to_top();}
+function ksiega_edit(){edit();document.getElementById("edit_all").src = "ksiega_list_edit.php";}
+function add_video(){$("#okno_admin.edit_all").css("visibility","visible").css("display","block");$("#admin_bg").css("visibility","visible").css("display","block");document.getElementById("edit_all").src ="add_video.php";to_top();}
+function edit_video_list(){$("#okno_admin.edit_all").css("visibility","visible").css("display","block");$("#admin_bg").css("visibility","visible").css("display","block");document.getElementById("edit_all").src ="video_edit.php";to_top();}
+function edit_msze(){$("#okno_admin.edit_all").css("visibility","visible").css("display","block");$("#admin_bg").css("visibility","visible").css("display","block");document.getElementById("edit_all").src ="msze_edit.php";to_top();}

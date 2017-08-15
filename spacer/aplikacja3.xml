@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- for xml compliance -->
+<krpano version="1.0.8.14">
+    <!-- akcja wykonywana na starcie -->
+    <events onxmlcomplete="onxmlcompleteaction();"/>
+    <action name="onxmlcompleteaction">
+		unselectmapspotsbutpassed();
+		selectmapspot(mapspot5,180);
+	</action>
+    <events onloadcomplete="onloadcompleteaction();"/>
+    <action name="onloadcompleteaction">
+		if(plugin[data].soundOn==false,stoppanosounds(),playpanosounds());
+	</action>
+    <action name="playpanosounds">
+		playbackgroundsound(%BASEDIR%/aplikacjadata/sounds/sound0.mp3,50,%1);
+	</action>
+    <action name="stoppanosounds">
+		stopbackgroundsound();
+	</action>
+    <action name="closepanoobjects">
+	</action>
+    <!--************** Panorama *******************************************************************-->
+    <!-- @File="aplikacja3.xml" @PanoName="Panorama_4" @FilePath="C:/Users/malutki/Desktop/Panorama_4.jpg" -->
+    <panoview h="0" v="0" fov="90"/>
+    <!-- parametry widoku -->
+    <view fisheye="0" limitview="range" hlookatmin="-180" hlookatmax="180" vlookatmin="-90" vlookatmax="90" maxpixelzoom="1.0" fovmax="90" fov="90" hlookat="0" vlookat="0"/>
+    <progress showload="none"/>
+    <autorotate horizon="0" tofov="90" waittime="1" speed="5"/>
+    <!-- obraz podglądu -->
+    <preview url="aplikacjadata/aplikacja3/preview.jpg" type="CUBESTRIP" striporder="FRBLUD" details="16"/>
+    <!-- aktualnej panoramy -->
+    <image type="CUBE" multires="true" tilesize="726" baseindex="0">
+        <level tiledimagewidth="2901" tiledimageheight="2901">
+            <left url="aplikacjadata/aplikacja3/3/2/%v_%u.jpg"/>
+            <front url="aplikacjadata/aplikacja3/0/2/%v_%u.jpg"/>
+            <right url="aplikacjadata/aplikacja3/1/2/%v_%u.jpg"/>
+            <back url="aplikacjadata/aplikacja3/2/2/%v_%u.jpg"/>
+            <up url="aplikacjadata/aplikacja3/4/2/%v_%u.jpg"/>
+            <down url="aplikacjadata/aplikacja3/5/2/%v_%u.jpg"/>
+        </level>
+        <level tiledimagewidth="1450" tiledimageheight="1450">
+            <left url="aplikacjadata/aplikacja3/3/1/%v_%u.jpg"/>
+            <front url="aplikacjadata/aplikacja3/0/1/%v_%u.jpg"/>
+            <right url="aplikacjadata/aplikacja3/1/1/%v_%u.jpg"/>
+            <back url="aplikacjadata/aplikacja3/2/1/%v_%u.jpg"/>
+            <up url="aplikacjadata/aplikacja3/4/1/%v_%u.jpg"/>
+            <down url="aplikacjadata/aplikacja3/5/1/%v_%u.jpg"/>
+        </level>
+        <level tiledimagewidth="725" tiledimageheight="725">
+            <left url="aplikacjadata/aplikacja3/3/0/%v_%u.jpg"/>
+            <front url="aplikacjadata/aplikacja3/0/0/%v_%u.jpg"/>
+            <right url="aplikacjadata/aplikacja3/1/0/%v_%u.jpg"/>
+            <back url="aplikacjadata/aplikacja3/2/0/%v_%u.jpg"/>
+            <up url="aplikacjadata/aplikacja3/4/0/%v_%u.jpg"/>
+            <down url="aplikacjadata/aplikacja3/5/0/%v_%u.jpg"/>
+        </level>
+        <!-- mobile phone / iphone images -->
+        <mobile>
+            <left url="aplikacjadata/aplikacja3/3/mobile_face.jpg"/>
+            <front url="aplikacjadata/aplikacja3/0/mobile_face.jpg"/>
+            <right url="aplikacjadata/aplikacja3/1/mobile_face.jpg"/>
+            <back url="aplikacjadata/aplikacja3/2/mobile_face.jpg"/>
+            <up url="aplikacjadata/aplikacja3/4/mobile_face.jpg"/>
+            <down url="aplikacjadata/aplikacja3/5/mobile_face.jpg"/>
+        </mobile>
+        <!-- tablet pc / ipad images -->
+        <tablet>
+            <left url="aplikacjadata/aplikacja3/3/tablet_face.jpg"/>
+            <front url="aplikacjadata/aplikacja3/0/tablet_face.jpg"/>
+            <right url="aplikacjadata/aplikacja3/1/tablet_face.jpg"/>
+            <back url="aplikacjadata/aplikacja3/2/tablet_face.jpg"/>
+            <up url="aplikacjadata/aplikacja3/4/tablet_face.jpg"/>
+            <down url="aplikacjadata/aplikacja3/5/tablet_face.jpg"/>
+        </tablet>
+    </image>
+    <!--************** Hotspoty i Flary ***********************************************************-->
+    <hotspot name="spot7" onclick="mainloadpano(aplikacja2.xml);" url="aplikacjadata/graphics/spots/spot1.png" ath="55.3511" atv="3.50649"/>
+    <hotspot name="spot8" onclick="mainloadpano(aplikacja0.xml);" url="aplikacjadata/graphics/spots/spot1.png" ath="-54.4794" atv="3.7987"/>
+    <action name="hidepanospotsaction">
+		set(hotspot[spot7].visible, false);
+		set(hotspot[spot8].visible, false);
+	</action>
+    <action name="showpanospotsaction">
+		set(hotspot[spot7].visible, true);
+		set(hotspot[spot8].visible, true);
+	</action>
+    <!-- zamknij wszystkie Hotspoty -->
+</krpano>

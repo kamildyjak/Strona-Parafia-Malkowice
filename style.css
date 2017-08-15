@@ -1,0 +1,686 @@
+@font-face {
+	font-family : Cambria;
+	src : ulr(fonts/Cambria.tff) format("truetype");
+}
+
+#article_header.dni_powszednie, #article_header.niedziele, #msze, .rozpiska  {
+webkit-transition: all 0.2s linear; 
+     -moz-transition: all 0.2s linear; 
+      -ms-transition: all 0.2s linear; 
+       -o-transition: all 0.2s linear; 
+          transition: all 0.2s linear;
+}
+
+body {
+	background-image: url(images/body_bg.jpg);
+	margin : 0;
+}
+
+p {
+	font-family : Cambria;
+}
+
+button {
+	cursor:pointer;
+}
+
+#menu_button a{
+	text-decoration: none;
+	color:#433d38;
+	width:147px;
+	height:27px;
+	padding-top:5px;
+	display:block;
+}
+#content {
+	position :relative;
+	width:962px;
+	height:auto;
+	left:50%;
+	margin-left: -481px;
+	background-color : rgba(180,166,147,0.2);
+
+}
+#content div{
+	display: inline-block;
+}
+
+#top_admin_panel{
+	width:962px;
+	background-image:url(images/menu_admin_bg.png);
+	height:45px;
+	box-shadow: 0px 0px 11px 2px rgba(42, 42, 42, 0.7);
+	-webkit-box-shadow:0px 0px 11px 2px rgba(42, 42, 42, 0.7);
+	-moz-box-shadow:0px 0px 11px 2px rgba(42, 42, 42, 0.7);
+}
+
+#top_admin_panel article, #menu_admin article {
+	width:210px;
+	display:inline-block;
+	margin-top:9px;
+	padding:3px;
+	border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+	background-color: rgba(219, 211, 200, 0.11);
+	font-family:Cambria;
+	color : #e5e0d9;
+	font-size:18px;
+	cursor:pointer;
+}
+
+#header {
+	position : relative;
+	width : 100%;
+	height: 108px;
+	background-image : url(images/header_logo.png);
+	background-repeat : no-repeat;
+}
+
+.napis_parafia {
+	position:relative;
+	width: 400px;
+	height:60px;
+	top:24px;
+	left:122px;
+	cursor:pointer;
+	font-family : Cambria;
+}
+
+.napis_parafia h1{
+	font-size : 31px;
+	color:#1e1c1a;
+	margin:0px;
+}
+
+.napis_parafia h2{
+	font-size : 21px;
+	color:#58553a;
+	margin:0px;
+	font-weight:normal;
+}
+
+.spolecznosci {
+	margin-left:317px;
+	margin-top:9px;
+	vertical-align:top;
+	
+}
+
+#menu {
+	position:relative;
+	width : 100%;
+	height : 43px;
+	background-image : url(images/menu_bg.jpg);
+}
+
+#menu div{
+	display: inline-block;
+}
+
+#menu_button {
+	width : 147px;
+	height: 28px;
+	background-image : url(images/menu_button_bg.png);
+	background-repeat : no-repeat;
+	margin-top : 7px;
+	cursor: pointer;
+	color : #e5e0d9;
+	font-family : Cambria;
+	font-size : 15px;
+	vertical-align:top;
+}
+
+#menu_button article{
+	padding: 5px;
+}
+
+#menu_button li{
+	 list-style-type: none;
+	 background-image:url(images/menu_link_bg.jpg);
+	 font-size:15px;
+	 color:#433d38;
+	 height:27px;
+	 visibility:hidden;
+	 box-shadow: 0px 0px 11px 2px rgba(74, 74, 74, 0.6);
+	 -webkit-box-shadow:0px 0px 11px 2px rgba(74, 74, 74, 0.6);
+	 -moz-box-shadow:0px 0px 11px 2px rgba(74, 74, 74, 0.6);
+	 z-index:9;
+}
+
+#menu_button li:hover{
+	background-position:-147px 0px;
+}
+
+#center_column {
+
+	width: 700px;
+	height: auto;
+	margin-right : 13px;
+	overflow: hidden;
+	vertical-align:top;
+}
+
+#left_column {
+	vertical-align:top;
+	width: 245px;
+	height: auto;
+	overflow: hidden;
+}
+
+#article {
+	width : 700px;
+	height : auto;
+	background-image : url(images/article_bg2.jpg);
+	background-repeat : no-repeat;
+	margin-bottom:25px;
+	
+}
+
+#article_header {
+	width:665px;
+	height : 25px;
+	margin-top:11px;
+	margin-left:16px;
+	background-image: url(images/pasek_pod_menu.png);
+	background-repeat: no-repeat;
+	font-family : Cambria;
+	color : #1e1c1a;
+	font-size : 15px;
+}
+
+#article_header.dni_powszednie,#article_header.niedziele, #article_header.swieto ,#article_header.imieniny ,#article_header.malko,#article_header.dunk {
+	width:210px;
+	opacity:0;
+	color:#433d38;
+	height:14px;
+}
+
+#tresc {
+	font-family:Cambria;
+	color:#1e1c1a;
+	margin-top:15px;
+	margin-bottom:20px;
+	font-size:15px;
+}
+#tresc p{
+	margin:0px 0px 10px 0px;
+}
+
+#tresc.pelna {
+	margin-right:22px;
+	margin-left:22px
+}
+
+#tresc.pelna p {
+	text-indent:15px;
+}
+#tresc.szczesc_boze{
+	width:515px;
+	height:auto;
+	font-size:16px;
+	font-style:italic;
+	display: inline-block;
+}
+
+#article_zdjecie {
+	width:160px;
+	height:auto;
+	vertical-align:top;
+	display: inline-block;
+}
+
+#msze {
+	width:245px;
+	height:auto;
+	background-color:rgba(181,171,159,0.29);
+}
+
+.rozpiska{
+	background-image:url(images/pasek_list.png);
+	background-repeat:repeat-y;
+	width:210px;
+	height:auto;
+	opacity:0;
+	color:#433d38;
+	font-size:15px;
+	font-family:Cambria;
+	margin: -9px 0px 15px 24px;
+	background-position: 197px;
+}
+
+.rozpiska p{
+	margin:0px 0px 6px 0px;
+	width:200px;
+}
+
+.header_msze{
+	width:100%;
+	height:27px;
+	background-image:url(images/msze_header_bg.jpg);
+	color:#fff9ef;
+	font-size:15px;
+	font-family:Cambria;
+}
+
+.header_msze p{
+	margin:4px 0px 0px 12px;
+}
+
+#godzina,#data {
+	color: #433d38;
+	font-family:Cambria;
+}
+#godzina.teraz {
+	width:245px;
+	font-size:25px;
+}
+
+#godzina.pozniej{
+	width:245px;
+	font-size:20px;
+}
+
+#godzina.teraz p{
+	margin:10px 0 0 0;
+}
+
+#godzina.pozniej p{
+	margin:0px 0px 5px 83px;
+}
+
+.strzalka_msze{
+	background-image:url(images/strzalka_msze1.jpg);
+	width:19px;
+	height:19px;
+	margin-left: 80px;
+	margin-top: -7px;
+}
+
+#dzisiaj_jest {
+	width:245px;
+	height:auto;
+	background-color:rgba(181,171,159,0.29);
+	margin-bottom:15px;
+}
+
+.header_dzisiaj,.header_polecane{
+	color:#fff9ef;
+	font-size:15px;
+	font-family:Cambria;
+	background-image:url(images/dzisiaj_jest_header.jpg);
+	width:100%;
+	height:27px;
+}
+
+.header_dzisiaj p,.header_polecane p {
+	margin:4px 0px 0px 12px;
+}
+
+#godzina.aktualna {
+	font-size:42px;
+	left:70px;
+	margin-top:20px;
+	width:100%;
+}
+
+#data {
+	font-size:14px;
+	margin:15px 0px 10px 0px;
+}
+
+.pelna_data{
+	display:block !important;
+}
+
+.dzien_nazwa {
+	width:245px;
+}
+
+#polecane_strony {
+	width:245px;
+	background-color:rgba(181,171,159,0.29);
+	height:auto;
+	margin-bottom:10px;
+}
+
+.link{
+	margin:0px 0px 7px 10px;
+	display:block !important;
+}
+
+.link a ,.aktu_link a, .gosc_link a{
+	font-size:15px;
+	font-family:Cambria;
+	text-decoration: none;
+	color: #433d38;
+}
+
+#stopka{
+	width:962px;
+	height:auto;
+}
+
+.kontakt{
+	width:961px;
+	height:200px;
+	background-image:url(images/kontakt_bg.jpg);
+}
+
+.footer{
+	width:961px;
+	height:39px;
+	background-image:url(images/footer_bg.jpg);
+}
+
+#article_list{
+	margin:0px 0px 0px 10px;
+	display:block !important;
+	padding-bottom: 5px;
+	height:auto;
+	min-height:44px;
+	background-image: url(images/pasek_list.png);
+	background-repeat: repeat-y;
+	background-position: 3px;
+}
+
+.all_aktu_button,.gosc_wpisz_button ,.all_gosc_button, .porzadek_mszy{
+	background-image:url(images/all_aktu_button.jpg);
+	width:162px;
+	height:24px;
+	font-size:13px;
+	font-family:Cambria;
+	cursor:pointer;
+	margin:0px 3px 15px 3px;
+}
+
+.porzadek_mszy a {
+	text-decoration:none;
+}
+
+.all_aktu_button p, .gosc_wpisz_button p,.all_gosc_button p, .porzadek_mszy p{
+	margin:4px 0px 0px 0px;
+	color:#1e1c1a;
+}
+
+.data_dodania,.autor {
+	font-size:13px;
+	margin-left:4px;
+	vertical-align:top;
+}
+
+.opis,.opis_gosc {
+	font-size:16px;
+	vertical-align:top;
+	margin:20px 0px 0px -50px;
+	width: 600px;
+}
+
+.opis_gosc{
+	margin:-27px 0px 0px 42px !important;
+	display:block !important;
+	
+}
+
+.aktu_link, .gosc_link {
+	vertical-align:top;
+	margin:20px 0px 0px 10px;
+	font-size:15px;
+	font-family:Cambria;
+	color: #433d38;
+	cursor:pointer;
+}
+
+.gosc_link {
+	float:right;
+}
+.pasek_lista{
+	width:29px;
+	height:auto;
+	min-height:54px;
+	background-image:url(images/aktualnosci_lista1.png);
+}
+
+.mapa_kontakt{
+	width:289px;
+	height:130px;
+	background-image:url(images/mapa_kontakt1.png);
+	margin: 12px 0px 0px 80px;
+	cursor:pointer;
+}
+
+.kontakt_info{
+	color:#433d38;
+	font-size:14px;
+	vertical-align:top;
+	font-family:Cambria;
+	margin:12px;
+}
+
+.kontakt_info p{
+	margin:5px;
+}
+
+.top_icon{
+	background-image:url(images/footer_top_icon.png);
+	width:37px;
+	height:36px;
+	cursor:pointer;
+	margin:2px 0px -3px 280px;
+}
+
+.copyright {
+	color:#e5e0d9;
+	font-size:13px;
+	font-family:Cambria;
+	vertical-align:top;
+	margin: 13px 0px 0px 47px;
+}
+
+.zdjecia {
+	margin:15px 0px 22px 0px;
+}
+
+.zdjecia img, #remove_img img{
+	border:1px solid #6a6359;
+	margin:0px 3px 10px 3px;
+	border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+
+#remove_img {
+	display:inline-block;
+	margin-bottom:15px;
+}
+
+#remove_img img {
+	display:inline-block;
+	margin-bottom:0px;
+}
+
+.remove_button{
+	width:90%;
+	height:30px;
+	cursor:pointer;
+	background-color:rgba(221, 221, 221, 1);
+	box-shadow: 0px 0px 7px 0px rgba(42, 42, 42, 0.6);
+	-webkit-box-shadow:0px 0px 7px 0px rgba(42, 42, 42, 0.6);
+	-moz-box-shadow:0px 0px 7px 0px rgba(42, 42, 42, 0.6);
+	min-width:40px;
+}
+
+.remove_button a, .remove_button p{
+	margin:0px;
+	padding-top:5px;
+	text-decoration:underline;
+	color:#1e1c1a;
+	width: 100%;
+	height: 100%;
+}
+
+.video_link a{
+	color:#7e7970;
+	font-size:15px;
+	font-family:Cambria;
+	margin-left: 20px;
+}
+
+.video_link li{
+	list-style-type: none;
+	text-decoration:underline;
+	background-image:url(images/link_icon.png);
+	background-repeat:no-repeat;
+	background-position: 0px 5px;
+	height: 23px;
+}
+
+.wirtualny_spacer {
+	background-image:url(images/spacer_button_bg.png);
+	width:232px;
+	height:65px;
+	margin:15px 0px 15px 0px;
+	color:#eae4e4;
+	cursor:pointer;
+	font-family:Cambria;
+	font-size:21px;
+}
+
+#menu_admin {
+	width:670px;
+	height:45px;
+	background-image:url(images/menu_admin_bg.png);
+	border-radius:3px;
+	-moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+	box-shadow: 0px 0px 11px 2px rgba(42, 42, 42, 1);
+	margin:10px 0px 15px 0px;
+}
+
+#menu_admin article{
+	margin: 9px 3px 0px 3px;
+	width:230px;
+	/*  Te same parametry co w #top_admin_panel */
+}
+
+#menu_admin.left_column {
+	width:215px;
+}
+
+#okno_admin {
+	position:absolute;
+	top:0px;
+	width:900px;
+	height:auto;
+	background-image:url(images/body_bg.jpg);
+	visibility:hidden;
+	z-index:10;
+	left:50%;
+	margin-left:-450px;
+	margin-bottom:20px;
+	border-radius:3px;
+	-moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+	box-shadow: 0px 0px 28px 1px rgba(255, 255, 255, 0.66);
+	-webkit-box-shadow:0px 0px 28px 1px rgba(255, 255, 255, 0.66);
+	-moz-box-shadow:0px 0px 28px 1px rgba(255, 255, 255, 0.66);
+}
+
+#panel_admin {
+	width:900px;
+	height:auto;
+}
+
+#panel_admin p {
+	font-family:Cambria;
+	color:#1e1c1a;
+	font-size:16px;
+	display: inline-block;
+	margin:10px 0px 0px 22px;
+	width:340px;
+}
+
+#panel_admin.edytowanie {
+	margin-bottom: 15px;
+}
+
+#panel_admin.edytowanie article {
+	margin:0px !important;
+}
+#panel_admin article, #panel_admin.edytowanie article{
+	background-color: rgba(194, 194, 194, 1);
+	cursor:pointer;
+	box-shadow: 0px 0px 15px 1px rgba(72, 71, 69, 0.36);
+	-webkit-box-shadow:0px 0px 15px 1px rgba(72, 71, 69, 0.36);
+	-moz-box-shadow:0px 0px 15px 1px rgba(72, 71, 69, 0.36);
+	margin:0px 0px 0px 35px;
+}
+
+#panel_admin.article article {
+	padding: 0px;
+	width: 69px;
+	height: 27px;
+	margin: 0px 10px;
+}
+
+#okno_admin.video {
+	top:50%;
+	position:fixed;
+	margin:-81px 0px 0px -450px;
+}
+
+#panel_admin form{
+	margin:0px;
+}
+
+#pages {
+	width:100%;
+	margin:0px 0px 15px 0px;
+	
+}
+
+#pages li {
+	display:inline-block;
+	margin:0px 5px 0px 5px;
+	background-color:#8B7961;
+	width:30px;
+	height:22px;
+	border-radius:3px;
+	-moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+	box-shadow: 0px 0px 15px 1px rgba(72, 71, 69, 0.36);
+	-webkit-box-shadow:0px 0px 15px 1px rgba(72, 71, 69, 0.36);
+	-moz-box-shadow:0px 0px 15px 1px rgba(72, 71, 69, 0.36);
+}
+
+#pages li a{
+	text-decoration:none;
+}
+
+#pages li p{
+	color:#e5e0d9;
+	font-family:Cambria;
+	font-size:17px;
+	width:30px;
+	height:23px;
+	margin:0px;
+}
+
+input, textarea, button, #panel_admin article {
+	font-family:Cambria;
+	font-size:16px;
+	padding: 5px;
+	border-radius: 2px;
+	border: 0px;
+	margin: 20px 0px 0px 22px;
+	display:inline-block;
+}
+
+input[type="submit"]{
+	cursor:pointer;
+	margin-top:40px;
+	box-shadow: 0px 0px 25px 1px rgba(72, 71, 69, 0.56);
+	-webkit-box-shadow:0px 0px 25px 1px rgba(72, 71, 69, 0.56);
+	-moz-box-shadow:0px 0px 25px 1px rgba(72, 71, 69, 0.56);
+	background-color:rgba(221, 221, 221, 1);
+}

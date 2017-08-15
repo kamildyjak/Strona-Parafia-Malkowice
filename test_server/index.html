@@ -1,0 +1,228 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<link rel="stylesheet" href="css/header-basic.css">
+</head>
+<body style="margin:0">
+<div id="top" class="fill">
+	
+	<header class="header-basic">
+		<div class="header-limiter">
+
+		<logo>XREALITY</logo>
+			<nav>
+				<div class="nav1">
+				<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+				<style type="text/css">
+						.st2_nav{fill:none;stroke:transparent;stroke-miterlimit:10;}
+				</style>
+					<polyline class="st2_nav" points="135,4.5 8.8,4.5 8.8,31.2 135,31.2 135,18.2 "/>
+					
+				</svg>
+				<a href="">Kim jesteśmy</a>	
+				</div>
+				
+				<div class="nav2">
+				<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+					<polyline class="st2_nav" points="126,4.5 8.8,4.5 8.8,31.2 126,31.2 126,18.2 "/>
+					
+				</svg>
+				<a href="">Technologia</a>
+				</div>
+				
+				<div class="nav3">
+				<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+					<polyline class="st2_nav" points="89,4.5 8.8,4.5 8.8,31.2 89,31.2 89,18.2 "/>
+					
+				</svg>
+				<a href="">Kontakt</a>
+				</div>
+			</nav>
+		</div>
+	</header>
+	
+	<div id="dwudziestoscian" style="display:none">
+		<div class="test_prostokat">
+			<div class="zawartosc">
+			<h1>NASZE REALIZACJE</h1>
+			<dop></dop>
+			</div>
+		</div>
+		
+	<script type="text/javascript">
+		function dwu_2_click(){
+			if($(".zawartosc").attr("clicked") == "true"){
+				$(".zawartosc").css("-webkit-transform", "scaleX(0deg)").attr("clicked","false").addClass("hide");
+				setTimeout(function(){
+				$(".test_prostokat").css("display","none");
+				},300);
+			}else{
+				///$("#dwu_1").attr("z-index","1").css("fill-opacity","1").css("fill","black");
+				$(".test_prostokat").css("display","block");
+				$(".zawartosc").removeClass("hide").css("display","block").attr("clicked","true");
+			}
+			console.log("MA KURDE DZIALAC");
+		}
+		
+	</script>
+	<svg xmlns="http://www.w3.org/2000/svg" id="dwudz" width="400px" height="400px" viewBox="373.1 0 339 400" >
+	<script type="text/ecmascript"><![CDATA[
+		function dwu_click(target) {
+			var pole = $("#"+target);
+			pole.attr("z-index","-1");
+			var czy_juz_posiada = (pole.attr("class") == "selected");
+			console.log(czy_juz_posiada);
+			$("polygon").attr("class","");
+			if(czy_juz_posiada == false)
+				pole.attr("class","selected");
+				
+		}
+		
+		function dwu_2(target){
+			dwu_click(target);
+			parent.dwu_2_click();
+		}
+	]]>
+	</script>
+
+		<polygon onclick="dwu_1('dwu_1')" id="dwu_1" style="backface-visibility: hidden;" points="619.6,159.2 541.6,16.3 464,159.2 "/>
+		<polygon onclick="dwu_2('dwu_2')" id="dwu_2" points="701.5,108.7 541.6,16.3 619.6,159.2 "/>
+		<polygon onclick="dwu_3('dwu_3')" id="dwu_3" points="619.6,159.2 701.5,293.4 701.5,108.7 "/>
+		<polygon onclick="dwu_4('dwu_4')" id="dwu_4" points="541.9,293.3 541.9,293.4 701.5,293.4 619.6,159.2 "/>
+		<polygon onclick="dwu_5('dwu_5')" id="dwu_5" points="541.6,385.7 701.5,293.4 541.9,293.4 "/>
+		<polygon onclick="dwu_6('dwu_6')" id="dwu_6" points="381.7,293.4 541.6,385.7 541.9,293.4 "/>
+		<polygon onclick="dwu_7('dwu_7')" id="dwu_7" points="541.9,293.3 464,159.2 381.7,293.4 541.9,293.4 "/>
+		<polygon onclick="dwu_8('dwu_8')" id="dwu_8" points="381.7,108.7 381.7,293.4 464,159.2 "/>
+		<polygon onclick="dwu_9('dwu_9')" id="dwu_9" points="541.6,16.3 381.7,108.7 464,159.2 "/>
+		<polygon onclick="dwu_10('dwu_10')" id="dwu_10" points="541.9,293.3 619.6,159.2 464,159.2 "/>
+		<line x1="619.6" y1="159.2" x2="701.5" y2="108.7"/>
+		<line x1="464" y1="159.2" x2="381.7" y2="108.7"/>
+		<line x1="541.9" y1="293.3" x2="541.6" y2="385.7"/>
+	</svg>
+	</div>	
+</div>
+
+<div id="short_text" >
+<div class="text">
+<h3>The death of pixel leaves you with a flowing, magazine-quality canvas to design for.</h3>
+<h4>curves are curves, not ugly pixel approximations of curves</h4>
+</div>
+</div>
+
+<div id="who_we_are" class="fill">
+<div class="text" style="padding-top:110px">
+<h5>
+KIM JESTEŚMY
+<line></line>
+</h5>
+<h6>
+The death of the pixel leaves you with a flowing, magazine-quality canvas to design for. 
+<br>A canvas where curves are curves, not ugly pixel approximations of curves. 
+<br>A canvas that begins to blur the line between what we consider to be real and what we consider to be virtual.
+</h6>
+</div>
+</div>
+
+<div id="technology" class="fill">
+<div class="text">
+<h1>TECHNOLOGIA
+<line></line>
+</h1>
+<h2>
+One of the iconic representations of digital age is picture of
+</h2>
+</div>
+</div>
+
+<div id="contact" class="fill">
+
+
+</div>
+
+<div id="footer" class="fill">
+
+</div>
+
+</body>
+<script type="text/javascript">
+$(function(){
+
+ $.fn.fitText = function( kompressor, options ) {
+
+    // Setup options
+    var compressor = kompressor || 1,
+        settings = $.extend({
+          'minFontSize' : Number.NEGATIVE_INFINITY,
+          'maxFontSize' : Number.POSITIVE_INFINITY
+        }, options);
+
+    return this.each(function(){
+
+      // Store the object
+      var $this = $(this);
+
+      // Resizer() resizes items based on the object width divided by the compressor * 10
+      var resizer = function () {
+        $this.css('font-size', Math.max(Math.min($this.width() / (compressor*10), parseFloat(settings.maxFontSize)), parseFloat(settings.minFontSize)));
+      };
+
+      // Call once to set.
+      resizer();
+
+      // Call on resize. Opera debounces their resize by default.
+      $(window).on('resize.fittext orientationchange.fittext', resizer);
+
+    });
+
+  };
+
+	
+	$(document).ready(function(){
+		$("#dwudziestoscian").css("display","block");
+		$(".text h1").fitText(0.8, { minFontSize: '40px', maxFontSize: '93px' });
+		$(".text h2").fitText(0.8, { minFontSize: '12px', maxFontSize: '23px' });
+		$(".text h3").fitText(1.2, { minFontSize: '12px', maxFontSize: '20px' });
+		$(".text h4").fitText(1.2, { minFontSize: '12px', maxFontSize: '20px' });
+		$(".text h6").fitText(1.5, { minFontSize: '12px', maxFontSize: '22px' });
+
+
+	})
+		
+	function technology_line(){
+		if(window.pageYOffset > 1100){
+		var target = $(".text h1 line");
+			target.css("visibility", "visible");
+			target.css("-webkit-transform", "scaleX(1)");
+			target.css("transform","scaleX(1)");
+		}
+		
+		if(window.pageYOffset > 600){
+		var target = $(".text h5 line");
+			target.css("visibility", "visible");
+			target.css("-webkit-transform", "scaleX(1)");
+			target.css("transform","scaleX(1)");
+		}
+	}
+		window.addEventListener("scroll", technology_line, false);
+		
+})
+
+
+</script>
+<script type="text/javascript">
+    (function() {
+        var path = '//easy.myfonts.net/v2/js?sid=169901(font-family=Geogrotesque+Regular)&sid=169903(font-family=Geogrotesque+UltraLight)&sid=169904(font-family=Geogrotesque+Medium)&key=zoVn3Iopoa',
+            protocol = ('https:' == document.location.protocol ? 'https:' : 'http:'),
+            trial = document.createElement('script');
+        trial.type = 'text/javascript';
+        trial.async = true;
+        trial.src = protocol + path;
+        var head = document.getElementsByTagName("head")[0];
+        head.appendChild(trial);
+    })();
+</script>
+</html>
